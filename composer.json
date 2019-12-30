@@ -2,10 +2,11 @@
     "name": "sportsadnet/cds-sdk",
     "description": "The SDK to interface with the Central Data System",
     "type": "library",
+    "version": "v1.0.0-alpha",
     "license": "proprietary",
     "require": {
         "guzzlehttp/guzzle": "^6.5",
-        "laravel/framework": "6.0"
+        "laravel/framework": "^6.0"
     },
     "config": {
         "sort-packages": true
