@@ -2,7 +2,7 @@
     "name": "sportsadnet/cds-sdk",
     "description": "The SDK to interface with the Central Data System",
     "type": "library",
-    "version": "v1.0.0-alpha",
+    "version": "v1.0.1-alpha",
     "license": "proprietary",
     "require": {
         "guzzlehttp/guzzle": "^6.5",
@@ -12,5 +12,20 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SportsAdNet\\CentralDataService\\ServiceProvider"
+            ],
+            "aliases": {
+               "CdsSdk": "SportsAdNet\\CentralDataService\\Facade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CentralizedDataService\\": "src/Illuminate/"
+        }
+    }
 }
